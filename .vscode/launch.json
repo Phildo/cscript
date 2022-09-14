@@ -8,10 +8,10 @@
       "request": "launch",
       //"request": "attach",
 
-      "program": "${workspaceFolder}/build/gnomes.exe",
+      "program": "${workspaceFolder}/selfbuild.exe",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "${workspaceFolder}/build",
+      "cwd": "${workspaceFolder}",
       "environment": [],
     }
   ]
