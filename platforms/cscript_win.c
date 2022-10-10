@@ -4,6 +4,13 @@
 
 #include "../cscript.h"
 
+const csobjt OBJ_T     = 0;
+const csobjt ARR_T     = 1;
+const csobjt INT_T     = 2;
+const csobjt FLOAT_T   = 3;
+const csobjt STR_T     = 4;
+const csobjt COMMENT_T = 5;
+
 #include <windows.h>
 #include <stdlib.h>
 #include <stdio.h>

@@ -23,12 +23,12 @@ int cscript_cleanup(); //recommended to NOT do this! (leave to OS)
 //config
 struct tcscript_obj;
 typedef char csobjt;
-const csobjt OBJ_T     = 0;
-const csobjt ARR_T     = 1;
-const csobjt INT_T     = 2;
-const csobjt FLOAT_T   = 3;
-const csobjt STR_T     = 4;
-const csobjt COMMENT_T = 5;
+extern const csobjt OBJ_T;
+extern const csobjt ARR_T;
+extern const csobjt INT_T;
+extern const csobjt FLOAT_T;
+extern const csobjt STR_T;
+extern const csobjt COMMENT_T;
 struct tcscript_obj
 {
   char *name;

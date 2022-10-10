@@ -14,8 +14,20 @@ properties of build scripts:
 : no need for classes, but _also_ does not call for the API being "everything is a string"
 - string parsing often important
 : totally achievable with few "language features"
+- if you're working on a build script, you should have strong programming foundations
+: need not prioritize ease of use specifically for non-programmers
 - repl valuable
 : ok this one hurts...
+
+meta build system:
+- the goal is to be able to run a global "csbuild.exe":
+- - either compile, or refer to an already-compiled cscript_platform.c as a library
+- - find local script, build.c
+- - compile build.c with cscript_platform.c as a library (and automatically find cscript.h as include?), using env BBCC (fallback CC), into _local_ build.exe
+- - csbuild.exe builds your project
+- build.c builds local project files (such as cscript_test) (currently a batch file, until cscript mature enough to self-host)
+- buildbuild aims to build global csbuild.exe (to be distributed)
+- buildbuildbuild builds buildbuild (a cscript file); breaks the self-hosting loop by falling back to a 1-or-so line batch file
 
 todo:
 x separate win/mac/linux impls
